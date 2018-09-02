@@ -1,0 +1,9 @@
+<h3>{{dataBindingsTitle}}</h3>
+
+<div>{{loadingProgressText}} {{loadingProgress}}</div>
+<div>
+    <input type="text" (input)="onKeyboardType($event)">
+    <button class="btn btn-primary" [disabled]="!isEnableButton" 
+    (click)="onCreateInstance()">Create</button>
+</div>
+<div>{{instanceCreatedText}}</div>
