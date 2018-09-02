@@ -1,0 +1,30 @@
+<div *ngIf="serverStatus == 'offline'; else serverOnlineStatus"
+     [ngStyle]="{display: 'inline', backgroundColor: 'red'}"
+     [ngClass]="{offline: serverStatus == 'offline'}">
+    The server status is offline.
+</div>
+
+<br>
+<button (click)="onPrintTime()">Print Time</button>
+
+<div *ngFor="let dateTime of datesTimes">
+    {{dateTime}}
+</div>
+
+<!--
+<div *ngFor="let color of colors">
+    {{color}}
+</div>
+-->
+
+<ng-template #serverOnlineStatus>
+    <div [ngStyle]="{display: 'inline', backgroundColor: 'green'}">
+        The server status is online.
+    </div>
+</ng-template>
+
+ <!--
+     *ngIf="serverStatus == 'offline'; else serverOnlineStatus"
+     [ngStyle]="{backgroundColor: getServerStatusColor()}" 
+    [ngClass]="{offline: isServerOffline() === true}"
+-->
