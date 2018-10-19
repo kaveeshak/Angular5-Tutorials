@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
         background-color: orange;
     }`]
 })
-export class InlineComponent {
-
+export class InlineComponent {    
+    
 }

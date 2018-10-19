@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 export class DataBindingComponent {
 
     age: number = 25;
+    buttonClass = "btn btn-success";
+
+    constructor() {
+        
+        setTimeout(() => {this.buttonClass = "btn btn-danger";}, 5000)
+    }
 }
