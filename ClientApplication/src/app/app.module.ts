@@ -7,6 +7,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { InlineComponent } from './inline/inline.component';
 import { SelectorComponent } from './selector/selector.component';
 import { DataBindingComponent } from './dataBinding/dataBinding.component';
+import { DirectivesComponent } from 'src/app/directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DataBindingComponent } from './dataBinding/dataBinding.component';
     CalculatorComponent,
     InlineComponent, 
     SelectorComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+<div>
+    The random number is: {{randomNumber}}
+</div>
+
+<!--Examples of a Structural Directive and a Attribite Directive-->
+<div *ngIf="isEvenRandomNumber; else oddNumberLocalReference" 
+    [ngStyle]="{backgroundColor: 'green', display: 'inline'}">
+        The number is even.
+</div>
+
+<div [ngClass]="{oddNumberLocalReference1 : !isEvenRandomNumber}">
+    [ngClass] Attribute Directive.
+</div>
+
+<ng-template #oddNumberLocalReference>
+    The number is odd.
+</ng-template>
