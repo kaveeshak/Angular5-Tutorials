@@ -1,3 +1,9 @@
-.oddNumberLocalReference1 {
-    background-color: red;
+.ngClassSampleOrange {
+    background-color: orange;
+    display: block;;
+}
+
+.ngClassSampleYellow {
+    background-color: yellow;
+    display: inline;
 }

@@ -8,7 +8,7 @@ import { Component } from "@angular/core";
 export class DirectivesComponent {
 
     randomNumber = 0;
-    isEvenRandomNumber = true;
+    isEvenRandomNumber;
 
     ngOnInit() {
 
