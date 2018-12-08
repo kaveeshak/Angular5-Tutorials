@@ -9,6 +9,7 @@ export class DirectivesComponent {
 
     randomNumber = 0;
     isEvenRandomNumber;
+    topCarManufacturers = ['Toyota', 'Volkswagen Group', 'Hyundai', 'General Motors', 'Ford'];
 
     ngOnInit() {
 
