@@ -8,7 +8,12 @@
         The number is even.
 </div>
 
-<div [ngClass]="{ngClassSampleOrange : isEvenRandomNumber}">
+<div>
+
+</div>
+
+<div [ngClass]="{ngClassSampleOrange: isEvenRandomNumber, 
+    ngClassSampleYellow: !isEvenRandomNumber}">
     Example of [ngClass] Attribute Directive.
 </div>
 
@@ -17,3 +22,10 @@
         The number is odd.
     </div>
 </ng-template>
+
+<div>
+    Example of *ngFor structural directive.
+    <div *ngFor="let manufacturer of topCarManufacturers">
+            {{manufacturer}}
+    </div>
+</div>
