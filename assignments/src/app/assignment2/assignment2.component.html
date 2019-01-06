@@ -1,0 +1,14 @@
+<h4>Assignment 2</h4>
+
+<div>
+    Username: 
+    <!--
+    <input type="text" [(ngModel)]="username" (input)="onInputFieldInteraction()"/>
+    <button [disabled]="isDisabledClearButton" (click)="onClearButtonClick()">Clear</button>
+    -->
+    <input type="text" [(ngModel)]="username"/>
+    <button [disabled]="isDisabledClearButton" (click)="onClearButtonClick()">Clear</button>
+    <p>
+        {{username}}
+    </p>
+</div>
