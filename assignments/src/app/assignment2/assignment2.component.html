@@ -7,7 +7,7 @@
     <button [disabled]="isDisabledClearButton" (click)="onClearButtonClick()">Clear</button>
     -->
     <input type="text" [(ngModel)]="username"/>
-    <button [disabled]="isDisabledClearButton" (click)="onClearButtonClick()">Clear</button>
+    <button [disabled]="username == ''" (click)="username = ''">Clear</button>
     <p>
         {{username}}
     </p>
