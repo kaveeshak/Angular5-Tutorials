@@ -2,12 +2,8 @@
 
 <div>
     Username: 
-    <!--
-    <input type="text" [(ngModel)]="username" (input)="onInputFieldInteraction()"/>
-    <button [disabled]="isDisabledClearButton" (click)="onClearButtonClick()">Clear</button>
-    -->
     <input type="text" [(ngModel)]="username"/>
-    <button [disabled]="username == ''" (click)="username = ''">Clear</button>
+    <button [disabled]="getIsClearButtonDisabled()" (click)="onClearButtonClick()">Clear</button>
     <p>
         {{username}}
     </p>

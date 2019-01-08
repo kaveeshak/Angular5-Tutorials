@@ -7,21 +7,14 @@ import { Component } from '@angular/core';
 export class Assignment2Component {
 
     username = '';
-    isDisabledClearButton = true;
 
-    onInputFieldInteraction() {
+    getIsClearButtonDisabled() {
 
-        if (this.username != '' ) {
-            this.isDisabledClearButton = false;
-        }
-        else {
-            this.isDisabledClearButton = true;
-        }
+        return this.username === '' ? true : false;
     }
 
     onClearButtonClick() {
 
         this.username = '';
-        this.onInputFieldInteraction();
     }
 }
