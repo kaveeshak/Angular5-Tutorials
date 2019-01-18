@@ -7,14 +7,14 @@ import { Component } from '@angular/core';
 })
 export class Assignment3Component {
     isShowParagraph = true;
-    clickedEventsCount = [];
+    timeStamps = [];
 
     onDisplayDetails() {
             this.isShowParagraph = !this.isShowParagraph;
-            this.clickedEventsCount.push(this.clickedEventsCount.length + 1);
+            this.timeStamps.push(new Date());
     }
 
-    getBackgroundColor(clickedEvent) {
-        return clickedEvent >= 5 ? 'blue' : '';
+    getBackgroundColor(index) {
+        return index >= 5 ? 'blue' : '';
     }
 }

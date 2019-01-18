@@ -9,8 +9,8 @@
 </div>
 
 <div 
-    *ngFor='let clickedEvent of clickedEventsCount'
-    [ngStyle]='{backgroundColor: getBackgroundColor(clickedEvent)}'
-    [ngClass]='{clickedEventTextColor: clickedEvent >= 5}'>
-            {{clickedEvent}}
+    *ngFor='let timeStamp of timeStamps; let i = index'
+    [ngStyle]='{backgroundColor: getBackgroundColor(i)}'
+    [ngClass]='{clickedEventTextColor: i >= 5}'>
+            {{timeStamp}}
 </div>
