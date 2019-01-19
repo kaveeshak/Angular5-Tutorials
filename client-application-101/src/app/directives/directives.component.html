@@ -25,7 +25,7 @@
 
 <div>
     Example of *ngFor structural directive.
-    <div *ngFor="let manufacturer of topCarManufacturers">
-            {{manufacturer}}
+    <div *ngFor="let manufacturer of topCarManufacturers; let i = index">
+            {{manufacturer}} {{i}}
     </div>
 </div>
